@@ -1,21 +1,31 @@
 package models.msgs;
 
+import java.awt.*;
+
 public class Move {
-	final int position;
-	final String name;
+	Point p;
+//	final String name;
+	String from;
+	String to;
 
 
-	public int getPosition() {
-		return position;
+
+	public Point getPosition() {
+		return p;
 	}
 	
-	public String getName() {
-		return name;
+	public String getFrom() {
+		return from;
+	}
+
+	public String getTo() {
+		return to;
 	}
 	
-	public Move(int position, String name) {
-	    this.position = position;
-	    this.name = name;
+	public Move(Point p, String from, String to) {
+	    this.p = p;
+	    this.from = from;
+		this.to = to;
 	
 	}
 }

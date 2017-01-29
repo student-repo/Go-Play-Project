@@ -9,6 +9,8 @@ import static akka.pattern.Patterns.ask;
 import static java.util.concurrent.TimeUnit.*;
 
 import com.fasterxml.jackson.databind.JsonNode;
+
+import java.awt.*;
 import java.util.*;
 
 import models.msgs.*;
@@ -56,41 +58,38 @@ public class Table extends UntypedActor {
             else {                
                 getSender().tell("OK", getSelf());
             }
-        } else if (message instanceof Move)
-        {
-            System.out.println("^^^");
-        	int position = ((Move) message).getPosition();
-        	String name = ((Move) message).getName();  
-        	getSender().tell(new Ack(), getSelf());
-        	String text = "move on position    " +  position  + "  from " + name;
-        	notifyAll(new Info(text,"Table"));
-        }
-        else if (message instanceof Challenge)
-        {
-//            int position = ((Challenge2) message).getPosition();
-//            String name = ((Challenge2) message).getName();
-//            getSender().tell(new Ack(), getSelf());
-//            String text = "You get challenge from: " + name;
-            foo2(message);
-//            notifyAll(new GetChallenge(text,"Table"));
-        }
-        else if (message instanceof Info)
-        {
-        	String text = ((Info) message).getText();
-        	String name = ((Info) message).getName();  
-        	
-        	notifyAll(new Info(text, name));
-        }  
-        else if(message instanceof Quit)  {
-           
-            String name = ((Quit)message).getName();            
-            members.remove(name);
-            String text = "has left the game";            		
-            notifyAll(new Info(text, name));
-          
-        
         } else {
-            unhandled(message);
+//            if (message instanceof Move) {
+//                System.out.println("^^^");
+//                Point position = ((Move) message).getPosition();
+//                String name = ((Move) message).getName();
+//                getSender().tell(new Ack(), getSelf());
+//                String text = "move on position    " + position + "  from " + name;
+//                notifyAll(new Info(text, "Table"));
+//            }
+             if (message instanceof Challenge) {
+                foo2(message);
+            }
+            else if(message instanceof Move) {
+                 foo3(message);
+             }
+//            else if (message instanceof Info) {
+//                String text = ((Info) message).getText();
+//                String name = ((Info) message).getName();
+//
+//                notifyAll(new Info(text, name));
+//            }
+            else if (message instanceof Quit) {
+
+                String name = ((Quit) message).getName();
+                members.remove(name);
+                String text = "has left the game";
+                notifyAll(new Info(text, name));
+
+
+            } else {
+                unhandled(message);
+            }
         }
         
     }
@@ -113,6 +112,23 @@ public class Table extends UntypedActor {
             for(String m : members.keySet()){
                 if(m.equals(name)){
                     members.get(name).tell(a, defaultTable);
+                }
+            }
+
+        }
+    }
+
+    static public void foo3(Object msg)
+    {
+        if(msg instanceof Move) {
+            System.out.println("im sending move to player: " + ((Move) msg).getTo());
+//            String name = ((Challenge) msg).challenger();
+//            System.out.println("foo name : " + name);
+//            GetChallenge a = new GetChallenge(((Challenge) msg).getSender(), name);
+            GetMove a = new GetMove(((Move) msg).getPosition(), ((Move) msg).getFrom(), ((Move) msg).getTo());
+            for(String m : members.keySet()){
+                if(m.equals(((Move) msg).getTo())){
+                    members.get(((Move) msg).getTo()).tell(a, defaultTable);
                 }
             }
 

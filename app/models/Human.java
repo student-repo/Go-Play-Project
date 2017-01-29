@@ -1,6 +1,10 @@
 package models;
 
 
+import game.GoPlayer;
+import game.engine.BoardFieldOwnership;
+import game.engine.GameEngine;
+import game.engine.GameEngineStatus;
 import models.msgs.*;
 import play.Logger;
 import play.mvc.*;
@@ -11,6 +15,7 @@ import akka.actor.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -20,6 +25,10 @@ public class Human extends UntypedActor
     public final String               name;
     public final ActorRef             table;
     public String challenger = null;
+    public String opponent;
+    public boolean gameStarted = false;
+    private GameEngine game;
+    private GoPlayer player, opponentPlayer;
 
     protected WebSocket.In<JsonNode>  in;
     protected WebSocket.Out<JsonNode> out;
@@ -45,20 +54,54 @@ public class Human extends UntypedActor
                     ArrayList<String> inputArguments = new ArrayList<String>(Arrays.asList(event.get("nr").asText().split("\\s* \\s*")));
                     System.out.println(inputArguments);
 
-                    int nr = event.get("nr").asInt();
-                	getSelf().tell(new Move(nr,name), getSelf() );
-                    System.out.println("M(OVE MOVE ");
+//                    int nr = event.get("nr").asText();
+                    if(gameStarted){
+
+                        ObjectNode event1 = Json.newObject();
+                        try{
+
+                            game.makeMove(Integer.parseInt(inputArguments.get(0)), Integer.parseInt(inputArguments.get(1)), player);
+                            event1.put("message", getGameBoardView());
+                            out.write(event1);
+                            getSelf().tell(new Move(new Point(Integer.parseInt(inputArguments.get(0)), Integer.parseInt(inputArguments.get(1))),name, opponent), getSelf() );
+                        }
+                        catch(Exception e){
+                            event1.put("message", "Not your turn! ");
+                            out.write(event1);
+                        }
+
+
+                    }
                 }
                 catch (Exception e)
                 {
                     Logger.error("invokeError");
                 }
                 try{
-                    System.out.println(event.get("nrr").asText());
-                    setChallenger(event.get("nrr").asText());
-                    int nr = event.get("nrr").asInt();
-                    getSelf().tell(new Challenge(name ,event.get("nrr").asText()), getSelf() );
-                    System.out.println("CHALLENGE");
+                    if(gameStarted){
+                        ;
+                    }
+                    else{
+                        if (event.get("nrr").asText().equals(challenger)) {
+
+                            getSelf().tell(new Challenge(name ,event.get("nrr").asText()), getSelf() );
+                            gameStarted = true;
+                            setOpponent(challenger);
+                            ObjectNode event1 = Json.newObject();
+                            event1.put("message", "Lets start the game! Your move");
+                            out.write(event1);
+                            player = new GoPlayer(BoardFieldOwnership.BLACK, GameEngineStatus.GAME);
+                            opponentPlayer = new GoPlayer(BoardFieldOwnership.WHITE, GameEngineStatus.GAME);
+                            game = new GameEngine(opponentPlayer, player);
+                        }
+                        else{
+                            setChallenger(event.get("nrr").asText());
+                            getSelf().tell(new Challenge(name ,event.get("nrr").asText()), getSelf() );
+                            ObjectNode event1 = Json.newObject();
+                            event1.put("message", "You suggest game for " + event.get("nrr").asText());
+                            out.write(event1);
+                        }
+                    }
                 }
                 catch (Exception e)
                 {
@@ -98,10 +141,21 @@ public class Human extends UntypedActor
  
             if (msg instanceof Move)
             {   
-            	int position = ((Move) msg).getPosition();            	           			
+            	Point position = ((Move) msg).getPosition();
             	String text = "I've got the position " + position + " from WebSocket and send it to Table";
-            	table.tell(new Info(text, name), getSelf()); 
-            	table.tell(new Move(position, name), getSelf());
+                table.tell(new Move(position, ((Move) msg).getFrom(), ((Move) msg).getTo()), getSelf());
+            }
+            else if(msg instanceof GetMove){
+                GetMove move = (GetMove) msg;
+                ObjectNode event = Json.newObject();
+                event.put("message", "[ " + move.getFrom() + " ]" + move.getPosition() );
+
+                out.write(event);
+
+                ObjectNode event1 = Json.newObject();
+                game.makeMove((int)move.getPosition().getX(), (int)move.getPosition().getY(), opponentPlayer);
+                event1.put("message", getGameBoardView());
+                out.write(event1);
             }
         else if(msg instanceof Challenge)
         {
@@ -125,21 +179,18 @@ public class Human extends UntypedActor
                 ObjectNode event = Json.newObject();
                 if(info.getSender().equals(challenger)){
                     event.put("message", "User " + info.getChallenger() + " accepted your challenge. Lets start the game!");
+                    setOpponent(info.getSender());
+                    gameStarted = true;
+                    player = new GoPlayer(BoardFieldOwnership.WHITE, GameEngineStatus.GAME);
+                    opponentPlayer = new GoPlayer(BoardFieldOwnership.BLACK, GameEngineStatus.GAME);
+                    game = new GameEngine(player, opponentPlayer);
                 }
                 else{
-                    event.put("message", "You get challenge from " + info.getSender());
+                    setChallenger(info.getSender());
+                    event.put("message", "You get challenge from " + info.getSender() + ", to accept challenge the user also ");
 
                 }
                 out.write(event);
-            }
-            
-            else if(msg instanceof Ack)
-            {       
-            	             	
-	            ObjectNode event = Json.newObject();
-	            event.put("message", "[ Ack from Table: my move has been accepted ] "); 
-	            
-	            out.write(event);
             }
             else {
                 unhandled(msg);
@@ -150,6 +201,19 @@ public class Human extends UntypedActor
         private void setChallenger(String challenger){
             this.challenger = challenger;
         }
+
+    private void setOpponent(String opponent){
+        this.opponent = opponent;
+    }
+    private String getGameBoardView() {
+        String s = "Board state: \n";
+        for (Point p : game.getBoardFields().keySet()) {
+            if (game.getBoardFields().get(p) != BoardFieldOwnership.FREE) {
+                s += "[ " + (int)p.getX() + ", " + (int)p.getY() + " ]" + ": " + game.getBoardFields().get(p) + '\n';
+            }
+        }
+        return s;
+    }
             
 }
 
