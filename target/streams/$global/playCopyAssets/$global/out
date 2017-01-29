@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/ubuntu-master/Downloads/playWebsocket/public/images/favicon.png,/home/ubuntu-master/Downloads/playWebsocket/target/scala-2.10/classes/public/images/favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/ubuntu-master/Downloads/playWebsocket/public/javascripts/jquery-1.7.1.min.js,/home/ubuntu-master/Downloads/playWebsocket/target/scala-2.10/classes/public/javascripts/jquery-1.7.1.min.js)[0m
+[0m[[0mdebug[0m] [0m	(/home/ubuntu-master/Downloads/playWebsocket/public/stylesheets/bootstrap.css,/home/ubuntu-master/Downloads/playWebsocket/target/scala-2.10/classes/public/stylesheets/bootstrap.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/ubuntu-master/Downloads/playWebsocket/public/stylesheets/main.css,/home/ubuntu-master/Downloads/playWebsocket/target/scala-2.10/classes/public/stylesheets/main.css)[0m

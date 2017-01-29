@@ -1,0 +1,1263 @@
+2017-01-29 08:37:20,865 - [INFO] - from play in pool-4-thread-7 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2017-01-29 08:39:42,161 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2017-01-29 08:39:50,061 - [INFO] - from play in New I/O worker #6 
+Starting application default Akka system.
+
+2017-01-29 08:42:18,095 - [INFO] - from play in play-internal-execution-context-8 
+Shutdown application default Akka system.
+
+2017-01-29 08:42:18,164 - [INFO] - from play in play-internal-execution-context-8 
+Application started (Dev)
+
+2017-01-29 08:42:22,486 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 09:24:05,406 - [INFO] - from play in play-internal-execution-context-15 
+Shutdown application default Akka system.
+
+2017-01-29 09:24:05,442 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2017-01-29 09:24:09,306 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 09:30:45,667 - [INFO] - from play in play-internal-execution-context-17 
+Shutdown application default Akka system.
+
+2017-01-29 09:30:45,708 - [INFO] - from play in play-internal-execution-context-17 
+Application started (Dev)
+
+2017-01-29 09:30:50,208 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 09:33:08,195 - [INFO] - from play in play-internal-execution-context-17 
+Shutdown application default Akka system.
+
+2017-01-29 09:33:08,220 - [INFO] - from play in play-internal-execution-context-17 
+Application started (Dev)
+
+2017-01-29 09:33:18,037 - [INFO] - from play in New I/O worker #11 
+Starting application default Akka system.
+
+2017-01-29 09:35:43,811 - [INFO] - from play in play-internal-execution-context-27 
+Shutdown application default Akka system.
+
+2017-01-29 09:35:43,842 - [INFO] - from play in play-internal-execution-context-27 
+Application started (Dev)
+
+2017-01-29 09:35:47,111 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 09:37:22,761 - [INFO] - from play in play-internal-execution-context-25 
+Shutdown application default Akka system.
+
+2017-01-29 09:37:22,798 - [INFO] - from play in play-internal-execution-context-25 
+Application started (Dev)
+
+2017-01-29 09:37:30,045 - [INFO] - from play in New I/O worker #4 
+Starting application default Akka system.
+
+2017-01-29 09:39:56,790 - [INFO] - from play in play-internal-execution-context-38 
+Shutdown application default Akka system.
+
+2017-01-29 09:39:56,817 - [INFO] - from play in play-internal-execution-context-38 
+Application started (Dev)
+
+2017-01-29 09:40:03,890 - [INFO] - from play in New I/O worker #4 
+Starting application default Akka system.
+
+2017-01-29 09:40:56,102 - [INFO] - from play in play-internal-execution-context-36 
+Shutdown application default Akka system.
+
+2017-01-29 09:40:56,121 - [INFO] - from play in play-internal-execution-context-36 
+Application started (Dev)
+
+2017-01-29 09:40:59,905 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 09:43:21,800 - [INFO] - from play in play-internal-execution-context-40 
+Shutdown application default Akka system.
+
+2017-01-29 09:43:21,820 - [INFO] - from play in play-internal-execution-context-40 
+Application started (Dev)
+
+2017-01-29 09:43:29,294 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 09:45:59,361 - [INFO] - from play in play-internal-execution-context-47 
+Shutdown application default Akka system.
+
+2017-01-29 09:45:59,382 - [INFO] - from play in play-internal-execution-context-47 
+Application started (Dev)
+
+2017-01-29 09:46:06,396 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 09:52:20,039 - [ERROR] - from application in New I/O worker #11 
+
+
+! @72p8jdgf3 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 09:52:20,873 - [ERROR] - from application in New I/O worker #12 
+
+
+! @72p8jdhla - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 09:52:44,499 - [ERROR] - from application in New I/O worker #12 
+
+
+! @72p8jf0k2 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 09:52:45,199 - [ERROR] - from application in New I/O worker #1 
+
+
+! @72p8jf1l1 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 09:52:55,580 - [INFO] - from play in play-internal-execution-context-52 
+Shutdown application default Akka system.
+
+2017-01-29 09:52:55,594 - [INFO] - from play in play-internal-execution-context-52 
+Application started (Dev)
+
+2017-01-29 09:52:58,751 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 10:14:18,919 - [INFO] - from play in play-internal-execution-context-58 
+Shutdown application default Akka system.
+
+2017-01-29 10:14:18,949 - [INFO] - from play in play-internal-execution-context-58 
+Application started (Dev)
+
+2017-01-29 10:14:21,851 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 10:14:51,429 - [INFO] - from play in play-internal-execution-context-48 
+Shutdown application default Akka system.
+
+2017-01-29 10:14:51,459 - [INFO] - from play in play-internal-execution-context-48 
+Application started (Dev)
+
+2017-01-29 10:14:55,420 - [INFO] - from play in New I/O worker #5 
+Starting application default Akka system.
+
+2017-01-29 10:15:40,337 - [INFO] - from play in play-internal-execution-context-55 
+Shutdown application default Akka system.
+
+2017-01-29 10:15:40,366 - [INFO] - from play in play-internal-execution-context-55 
+Application started (Dev)
+
+2017-01-29 10:15:49,534 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 10:16:50,370 - [INFO] - from play in play-internal-execution-context-63 
+Shutdown application default Akka system.
+
+2017-01-29 10:16:50,396 - [INFO] - from play in play-internal-execution-context-63 
+Application started (Dev)
+
+2017-01-29 10:16:55,870 - [INFO] - from play in New I/O worker #12 
+Starting application default Akka system.
+
+2017-01-29 10:18:03,445 - [INFO] - from play in play-internal-execution-context-67 
+Shutdown application default Akka system.
+
+2017-01-29 10:18:03,465 - [INFO] - from play in play-internal-execution-context-67 
+Application started (Dev)
+
+2017-01-29 10:18:06,594 - [INFO] - from play in New I/O worker #16 
+Starting application default Akka system.
+
+2017-01-29 10:19:06,665 - [INFO] - from play in play-internal-execution-context-69 
+Shutdown application default Akka system.
+
+2017-01-29 10:19:06,678 - [INFO] - from play in play-internal-execution-context-69 
+Application started (Dev)
+
+2017-01-29 10:19:09,530 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 10:20:06,805 - [INFO] - from play in play-internal-execution-context-73 
+Shutdown application default Akka system.
+
+2017-01-29 10:20:06,824 - [INFO] - from play in play-internal-execution-context-73 
+Application started (Dev)
+
+2017-01-29 10:20:10,616 - [INFO] - from play in New I/O worker #7 
+Starting application default Akka system.
+
+2017-01-29 10:29:32,828 - [INFO] - from play in play-internal-execution-context-70 
+Shutdown application default Akka system.
+
+2017-01-29 10:29:32,851 - [INFO] - from play in play-internal-execution-context-70 
+Application started (Dev)
+
+2017-01-29 10:29:36,960 - [INFO] - from play in New I/O worker #14 
+Starting application default Akka system.
+
+2017-01-29 10:30:19,801 - [INFO] - from play in play-internal-execution-context-79 
+Shutdown application default Akka system.
+
+2017-01-29 10:30:19,827 - [INFO] - from play in play-internal-execution-context-79 
+Application started (Dev)
+
+2017-01-29 10:30:23,635 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 10:32:06,247 - [INFO] - from play in play-internal-execution-context-86 
+Shutdown application default Akka system.
+
+2017-01-29 10:32:06,265 - [INFO] - from play in play-internal-execution-context-86 
+Application started (Dev)
+
+2017-01-29 10:32:09,276 - [INFO] - from play in New I/O worker #5 
+Starting application default Akka system.
+
+2017-01-29 10:32:57,871 - [INFO] - from play in play-internal-execution-context-88 
+Shutdown application default Akka system.
+
+2017-01-29 10:32:57,888 - [INFO] - from play in play-internal-execution-context-88 
+Application started (Dev)
+
+2017-01-29 10:33:01,018 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 10:33:22,850 - [INFO] - from play in play-internal-execution-context-90 
+Shutdown application default Akka system.
+
+2017-01-29 10:33:22,873 - [INFO] - from play in play-internal-execution-context-90 
+Application started (Dev)
+
+2017-01-29 10:33:25,457 - [INFO] - from play in New I/O worker #12 
+Starting application default Akka system.
+
+2017-01-29 10:34:00,472 - [INFO] - from play in play-internal-execution-context-92 
+Shutdown application default Akka system.
+
+2017-01-29 10:34:00,491 - [INFO] - from play in play-internal-execution-context-92 
+Application started (Dev)
+
+2017-01-29 10:34:03,530 - [INFO] - from play in New I/O worker #15 
+Starting application default Akka system.
+
+2017-01-29 10:36:38,397 - [INFO] - from play in play-internal-execution-context-90 
+Shutdown application default Akka system.
+
+2017-01-29 10:36:38,413 - [INFO] - from play in play-internal-execution-context-90 
+Application started (Dev)
+
+2017-01-29 10:36:40,893 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 10:37:57,191 - [INFO] - from play in play-internal-execution-context-97 
+Shutdown application default Akka system.
+
+2017-01-29 10:37:57,217 - [INFO] - from play in play-internal-execution-context-97 
+Application started (Dev)
+
+2017-01-29 10:38:15,295 - [INFO] - from play in New I/O worker #7 
+Starting application default Akka system.
+
+2017-01-29 10:47:03,398 - [INFO] - from play in play-internal-execution-context-100 
+Shutdown application default Akka system.
+
+2017-01-29 10:47:03,420 - [INFO] - from play in play-internal-execution-context-100 
+Application started (Dev)
+
+2017-01-29 10:47:10,295 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 10:48:17,198 - [INFO] - from play in play-internal-execution-context-104 
+Shutdown application default Akka system.
+
+2017-01-29 10:48:17,219 - [INFO] - from play in play-internal-execution-context-104 
+Application started (Dev)
+
+2017-01-29 10:48:22,343 - [INFO] - from play in New I/O worker #15 
+Starting application default Akka system.
+
+2017-01-29 10:48:25,169 - [ERROR] - from application in play-internal-execution-context-104 
+invokeError
+
+2017-01-29 10:48:25,170 - [ERROR] - from application in play-internal-execution-context-104 
+invokeError
+
+2017-01-29 10:48:26,935 - [ERROR] - from application in play-internal-execution-context-104 
+invokeError
+
+2017-01-29 10:48:26,935 - [ERROR] - from application in play-internal-execution-context-104 
+invokeError
+
+2017-01-29 10:49:22,472 - [INFO] - from play in play-internal-execution-context-107 
+Shutdown application default Akka system.
+
+2017-01-29 10:49:22,493 - [INFO] - from play in play-internal-execution-context-107 
+Application started (Dev)
+
+2017-01-29 10:49:25,772 - [INFO] - from play in New I/O worker #2 
+Starting application default Akka system.
+
+2017-01-29 10:49:29,057 - [ERROR] - from application in play-internal-execution-context-108 
+invokeError
+
+2017-01-29 10:49:34,152 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 10:49:35,016 - [ERROR] - from application in play-internal-execution-context-108 
+invokeError
+
+2017-01-29 10:49:36,776 - [ERROR] - from application in play-internal-execution-context-108 
+invokeError
+
+2017-01-29 10:50:00,774 - [INFO] - from play in play-internal-execution-context-95 
+Shutdown application default Akka system.
+
+2017-01-29 10:50:00,792 - [INFO] - from play in play-internal-execution-context-95 
+Application started (Dev)
+
+2017-01-29 10:50:03,868 - [INFO] - from play in New I/O worker #6 
+Starting application default Akka system.
+
+2017-01-29 10:50:06,473 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 10:50:07,352 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 10:50:07,864 - [ERROR] - from application in play-internal-execution-context-95 
+invokeError
+
+2017-01-29 10:50:08,216 - [ERROR] - from application in play-internal-execution-context-95 
+invokeError
+
+2017-01-29 11:00:17,187 - [INFO] - from play in play-internal-execution-context-111 
+Shutdown application default Akka system.
+
+2017-01-29 11:00:17,208 - [INFO] - from play in play-internal-execution-context-111 
+Application started (Dev)
+
+2017-01-29 11:00:21,847 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 11:00:26,257 - [ERROR] - from application in play-internal-execution-context-111 
+invokeError
+
+2017-01-29 11:00:26,257 - [ERROR] - from application in play-internal-execution-context-109 
+invokeError
+
+2017-01-29 11:00:29,368 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:29,369 - [ERROR] - from application in play-internal-execution-context-109 
+invokeError
+
+2017-01-29 11:00:32,504 - [ERROR] - from application in play-internal-execution-context-111 
+invokeError
+
+2017-01-29 11:00:32,504 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:41,112 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:41,112 - [ERROR] - from application in play-internal-execution-context-111 
+invokeError
+
+2017-01-29 11:00:41,992 - [ERROR] - from application in play-internal-execution-context-112 
+invokeError
+
+2017-01-29 11:00:41,992 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:42,936 - [ERROR] - from application in play-internal-execution-context-111 
+invokeError
+
+2017-01-29 11:00:42,936 - [ERROR] - from application in play-internal-execution-context-112 
+invokeError
+
+2017-01-29 11:00:43,672 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:43,672 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:00:44,475 - [ERROR] - from application in play-internal-execution-context-112 
+invokeError
+
+2017-01-29 11:00:44,475 - [ERROR] - from application in play-internal-execution-context-110 
+invokeError
+
+2017-01-29 11:01:22,541 - [INFO] - from play in play-internal-execution-context-113 
+Shutdown application default Akka system.
+
+2017-01-29 11:01:22,563 - [INFO] - from play in play-internal-execution-context-113 
+Application started (Dev)
+
+2017-01-29 11:01:25,083 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 11:01:27,234 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:01:29,481 - [ERROR] - from application in play-internal-execution-context-113 
+invokeError
+
+2017-01-29 11:01:30,617 - [ERROR] - from application in play-internal-execution-context-113 
+invokeError
+
+2017-01-29 11:01:32,360 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:01:36,904 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:01:37,913 - [ERROR] - from application in play-internal-execution-context-114 
+invokeError
+
+2017-01-29 11:01:38,377 - [ERROR] - from application in play-internal-execution-context-115 
+invokeError
+
+2017-01-29 11:01:38,617 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:01:39,348 - [ERROR] - from application in play-internal-execution-context-107 
+invokeError
+
+2017-01-29 11:02:07,436 - [INFO] - from play in play-internal-execution-context-116 
+Shutdown application default Akka system.
+
+2017-01-29 11:02:07,454 - [INFO] - from play in play-internal-execution-context-116 
+Application started (Dev)
+
+2017-01-29 11:02:10,355 - [INFO] - from play in New I/O worker #5 
+Starting application default Akka system.
+
+2017-01-29 11:05:25,622 - [INFO] - from play in play-internal-execution-context-118 
+Shutdown application default Akka system.
+
+2017-01-29 11:05:25,643 - [INFO] - from play in play-internal-execution-context-118 
+Application started (Dev)
+
+2017-01-29 11:05:28,056 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 11:05:37,740 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:05:39,579 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:05:40,532 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:05:57,248 - [INFO] - from play in play-internal-execution-context-117 
+Shutdown application default Akka system.
+
+2017-01-29 11:05:57,264 - [INFO] - from play in play-internal-execution-context-117 
+Application started (Dev)
+
+2017-01-29 11:05:59,805 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 11:06:02,221 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:06:03,196 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:06:03,996 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:06:06,284 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:06,964 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:06:07,471 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:07,827 - [ERROR] - from application in play-internal-execution-context-120 
+invokeError
+
+2017-01-29 11:06:08,308 - [ERROR] - from application in play-internal-execution-context-119 
+invokeError
+
+2017-01-29 11:06:08,811 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:09,252 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:09,668 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:10,092 - [ERROR] - from application in play-internal-execution-context-117 
+invokeError
+
+2017-01-29 11:06:10,452 - [ERROR] - from application in play-internal-execution-context-119 
+invokeError
+
+2017-01-29 11:35:50,859 - [INFO] - from play in play-internal-execution-context-121 
+Shutdown application default Akka system.
+
+2017-01-29 11:35:50,871 - [INFO] - from play in play-internal-execution-context-121 
+Application started (Dev)
+
+2017-01-29 11:35:55,232 - [INFO] - from play in New I/O worker #4 
+Starting application default Akka system.
+
+2017-01-29 11:36:00,314 - [ERROR] - from application in play-internal-execution-context-123 
+invokeError
+
+2017-01-29 11:36:05,345 - [ERROR] - from application in play-internal-execution-context-121 
+invokeError
+
+2017-01-29 11:36:09,766 - [ERROR] - from application in play-internal-execution-context-121 
+invokeError
+
+2017-01-29 11:36:12,998 - [ERROR] - from application in play-internal-execution-context-123 
+invokeError
+
+2017-01-29 11:40:49,290 - [INFO] - from play in play-internal-execution-context-126 
+Shutdown application default Akka system.
+
+2017-01-29 11:40:49,306 - [INFO] - from play in play-internal-execution-context-126 
+Application started (Dev)
+
+2017-01-29 11:40:53,300 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 11:40:57,498 - [ERROR] - from application in play-internal-execution-context-126 
+invokeError
+
+2017-01-29 11:41:02,193 - [ERROR] - from application in play-internal-execution-context-126 
+invokeError
+
+2017-01-29 11:41:41,256 - [INFO] - from play in play-internal-execution-context-127 
+Shutdown application default Akka system.
+
+2017-01-29 11:41:41,280 - [INFO] - from play in play-internal-execution-context-127 
+Application started (Dev)
+
+2017-01-29 11:41:43,725 - [INFO] - from play in New I/O worker #12 
+Starting application default Akka system.
+
+2017-01-29 11:41:45,731 - [ERROR] - from application in play-internal-execution-context-130 
+invokeError
+
+2017-01-29 11:41:47,858 - [ERROR] - from application in play-internal-execution-context-130 
+invokeError
+
+2017-01-29 11:41:50,314 - [ERROR] - from application in play-internal-execution-context-130 
+invokeError
+
+2017-01-29 11:48:50,733 - [INFO] - from play in play-internal-execution-context-131 
+Shutdown application default Akka system.
+
+2017-01-29 11:48:50,753 - [INFO] - from play in play-internal-execution-context-131 
+Application started (Dev)
+
+2017-01-29 11:48:54,034 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 11:49:11,063 - [ERROR] - from application in play-internal-execution-context-131 
+invokeError
+
+2017-01-29 11:49:35,139 - [ERROR] - from application in play-internal-execution-context-134 
+invokeError
+
+2017-01-29 11:50:30,935 - [ERROR] - from application in play-internal-execution-context-134 
+invokeError
+
+2017-01-29 11:50:40,439 - [ERROR] - from application in play-internal-execution-context-135 
+invokeError
+
+2017-01-29 11:50:47,255 - [ERROR] - from application in play-internal-execution-context-135 
+invokeError
+
+2017-01-29 11:55:41,830 - [INFO] - from play in play-internal-execution-context-139 
+Shutdown application default Akka system.
+
+2017-01-29 11:55:41,852 - [INFO] - from play in play-internal-execution-context-139 
+Application started (Dev)
+
+2017-01-29 11:55:45,022 - [INFO] - from play in New I/O worker #12 
+Starting application default Akka system.
+
+2017-01-29 11:55:50,539 - [ERROR] - from application in play-internal-execution-context-137 
+invokeError
+
+2017-01-29 11:57:18,921 - [INFO] - from play in play-internal-execution-context-140 
+Shutdown application default Akka system.
+
+2017-01-29 11:57:18,941 - [INFO] - from play in play-internal-execution-context-140 
+Application started (Dev)
+
+2017-01-29 11:57:21,682 - [INFO] - from play in New I/O worker #15 
+Starting application default Akka system.
+
+2017-01-29 11:57:32,948 - [ERROR] - from application in play-internal-execution-context-141 
+invokeError
+
+2017-01-29 11:57:50,277 - [ERROR] - from application in play-internal-execution-context-141 
+invokeError
+
+2017-01-29 11:59:19,111 - [INFO] - from play in play-internal-execution-context-145 
+Shutdown application default Akka system.
+
+2017-01-29 11:59:19,126 - [INFO] - from play in play-internal-execution-context-145 
+Application started (Dev)
+
+2017-01-29 11:59:21,647 - [INFO] - from play in New I/O worker #5 
+Starting application default Akka system.
+
+2017-01-29 11:59:29,357 - [ERROR] - from application in play-internal-execution-context-141 
+invokeError
+
+2017-01-29 11:59:34,996 - [ERROR] - from application in play-internal-execution-context-141 
+invokeError
+
+2017-01-29 11:59:36,052 - [ERROR] - from application in play-internal-execution-context-145 
+invokeError
+
+2017-01-29 11:59:36,771 - [ERROR] - from application in play-internal-execution-context-145 
+invokeError
+
+2017-01-29 11:59:37,436 - [ERROR] - from application in play-internal-execution-context-145 
+invokeError
+
+2017-01-29 11:59:38,133 - [ERROR] - from application in play-internal-execution-context-145 
+invokeError
+
+2017-01-29 12:02:16,284 - [INFO] - from play in play-internal-execution-context-144 
+Shutdown application default Akka system.
+
+2017-01-29 12:02:16,302 - [INFO] - from play in play-internal-execution-context-144 
+Application started (Dev)
+
+2017-01-29 12:02:18,754 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 12:02:23,279 - [ERROR] - from application in play-internal-execution-context-144 
+invokeError
+
+2017-01-29 12:02:32,070 - [ERROR] - from application in play-internal-execution-context-144 
+invokeError
+
+2017-01-29 12:02:51,044 - [INFO] - from play in play-internal-execution-context-148 
+Shutdown application default Akka system.
+
+2017-01-29 12:02:51,062 - [INFO] - from play in play-internal-execution-context-148 
+Application started (Dev)
+
+2017-01-29 12:02:53,732 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 12:03:01,552 - [ERROR] - from application in play-internal-execution-context-144 
+invokeError
+
+2017-01-29 12:03:05,255 - [ERROR] - from application in play-internal-execution-context-144 
+invokeError
+
+2017-01-29 12:05:17,186 - [INFO] - from play in play-internal-execution-context-153 
+Shutdown application default Akka system.
+
+2017-01-29 12:05:17,203 - [INFO] - from play in play-internal-execution-context-153 
+Application started (Dev)
+
+2017-01-29 12:05:19,578 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 12:05:22,201 - [ERROR] - from application in play-internal-execution-context-147 
+invokeError
+
+2017-01-29 12:05:26,137 - [ERROR] - from application in play-internal-execution-context-147 
+invokeError
+
+2017-01-29 12:05:27,808 - [ERROR] - from application in play-internal-execution-context-153 
+invokeError
+
+2017-01-29 12:05:28,481 - [ERROR] - from application in play-internal-execution-context-147 
+invokeError
+
+2017-01-29 12:05:28,816 - [ERROR] - from application in play-internal-execution-context-153 
+invokeError
+
+2017-01-29 12:05:32,320 - [ERROR] - from application in play-internal-execution-context-153 
+invokeError
+
+2017-01-29 12:05:48,888 - [ERROR] - from application in play-internal-execution-context-153 
+invokeError
+
+2017-01-29 12:05:55,745 - [ERROR] - from application in play-internal-execution-context-150 
+invokeError
+
+2017-01-29 13:43:06,025 - [ERROR] - from application in play-internal-execution-context-152 
+invokeError
+
+2017-01-29 13:43:17,578 - [ERROR] - from application in play-internal-execution-context-152 
+invokeError
+
+2017-01-29 13:43:24,449 - [ERROR] - from application in play-internal-execution-context-154 
+invokeError
+
+2017-01-29 13:48:05,878 - [ERROR] - from application in New I/O worker #3 
+
+
+! @72p9occa2 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 13:48:08,714 - [ERROR] - from application in New I/O worker #4 
+
+
+! @72p9ocgf3 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 13:48:22,926 - [ERROR] - from application in New I/O worker #4 
+
+
+! @72p9odbfk - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value challenge is not a member of object controllers.Application]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 13:48:43,739 - [INFO] - from play in play-internal-execution-context-155 
+Shutdown application default Akka system.
+
+2017-01-29 13:48:43,770 - [INFO] - from play in play-internal-execution-context-155 
+Application started (Dev)
+
+2017-01-29 13:48:46,765 - [INFO] - from play in New I/O worker #14 
+Starting application default Akka system.
+
+2017-01-29 13:49:23,294 - [ERROR] - from application in play-internal-execution-context-159 
+invokeError
+
+2017-01-29 13:49:29,884 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 13:49:59,326 - [ERROR] - from application in New I/O worker #4 
+
+
+! @72p9oio5b - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 13:49:59,993 - [ERROR] - from application in New I/O worker #13 
+
+
+! @72p9oip53 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10.jar:2.2.6]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10.jar:2.2.6]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2017-01-29 13:50:19,476 - [INFO] - from play in play-internal-execution-context-164 
+Shutdown application default Akka system.
+
+2017-01-29 13:50:19,495 - [INFO] - from play in play-internal-execution-context-164 
+Application started (Dev)
+
+2017-01-29 13:51:57,662 - [INFO] - from play in play-internal-execution-context-155 
+Application started (Dev)
+
+2017-01-29 13:52:02,528 - [INFO] - from play in New I/O worker #1 
+Starting application default Akka system.
+
+2017-01-29 13:52:15,023 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 13:52:18,478 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 13:52:19,134 - [ERROR] - from application in play-internal-execution-context-165 
+invokeError
+
+2017-01-29 13:52:22,186 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 14:08:41,700 - [INFO] - from play in play-internal-execution-context-155 
+Shutdown application default Akka system.
+
+2017-01-29 14:08:41,716 - [INFO] - from play in play-internal-execution-context-155 
+Application started (Dev)
+
+2017-01-29 14:08:44,601 - [INFO] - from play in New I/O worker #12 
+Starting application default Akka system.
+
+2017-01-29 14:08:54,649 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 14:08:59,176 - [ERROR] - from application in play-internal-execution-context-155 
+invokeError
+
+2017-01-29 14:09:07,568 - [ERROR] - from application in play-internal-execution-context-166 
+invokeError
+
+2017-01-29 14:12:31,724 - [INFO] - from play in play-internal-execution-context-166 
+Shutdown application default Akka system.
+
+2017-01-29 14:12:31,732 - [INFO] - from play in play-internal-execution-context-166 
+Application started (Dev)
+
+2017-01-29 14:12:34,147 - [INFO] - from play in New I/O worker #2 
+Starting application default Akka system.
+
+2017-01-29 14:12:40,725 - [ERROR] - from application in play-internal-execution-context-167 
+invokeError
+
+2017-01-29 14:12:59,258 - [ERROR] - from application in play-internal-execution-context-166 
+invokeError
+
+2017-01-29 14:17:55,220 - [INFO] - from play in play-internal-execution-context-170 
+Shutdown application default Akka system.
+
+2017-01-29 14:17:55,235 - [INFO] - from play in play-internal-execution-context-170 
+Application started (Dev)
+
+2017-01-29 14:17:58,943 - [INFO] - from play in New I/O worker #13 
+Starting application default Akka system.
+
+2017-01-29 14:18:11,479 - [ERROR] - from application in play-internal-execution-context-170 
+invokeError
+
+2017-01-29 14:18:28,627 - [ERROR] - from application in play-internal-execution-context-171 
+invokeError
+
+2017-01-29 14:18:40,581 - [ERROR] - from application in play-internal-execution-context-171 
+invokeError
+
+2017-01-29 14:19:04,111 - [ERROR] - from application in play-internal-execution-context-171 
+invokeError
+
+2017-01-29 14:21:29,297 - [INFO] - from play in play-internal-execution-context-169 
+Shutdown application default Akka system.
+
+2017-01-29 14:21:29,310 - [INFO] - from play in play-internal-execution-context-169 
+Application started (Dev)
+
+2017-01-29 14:21:32,209 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 14:21:35,712 - [ERROR] - from application in play-internal-execution-context-176 
+invokeError
+
+2017-01-29 14:21:37,544 - [ERROR] - from application in play-internal-execution-context-169 
+invokeError
+
+2017-01-29 14:21:38,448 - [ERROR] - from application in play-internal-execution-context-169 
+invokeError
+
+2017-01-29 14:21:38,952 - [ERROR] - from application in play-internal-execution-context-169 
+invokeError
+
+2017-01-29 14:21:39,312 - [ERROR] - from application in play-internal-execution-context-176 
+invokeError
+
+2017-01-29 14:21:55,552 - [ERROR] - from application in play-internal-execution-context-177 
+invokeError
+
+2017-01-29 14:22:04,601 - [ERROR] - from application in play-internal-execution-context-177 
+invokeError
+
+2017-01-29 14:22:06,857 - [ERROR] - from application in play-internal-execution-context-177 
+invokeError
+
+2017-01-29 14:22:12,072 - [ERROR] - from application in play-internal-execution-context-176 
+invokeError
+
+2017-01-29 14:22:59,506 - [INFO] - from play in play-internal-execution-context-180 
+Shutdown application default Akka system.
+
+2017-01-29 14:22:59,516 - [INFO] - from play in play-internal-execution-context-180 
+Application started (Dev)
+
+2017-01-29 14:23:02,116 - [INFO] - from play in New I/O worker #14 
+Starting application default Akka system.
+
+2017-01-29 14:23:12,353 - [ERROR] - from application in play-internal-execution-context-181 
+invokeError
+
+2017-01-29 14:23:21,849 - [ERROR] - from application in play-internal-execution-context-180 
+invokeError
+
+2017-01-29 14:24:21,949 - [INFO] - from play in play-internal-execution-context-174 
+Shutdown application default Akka system.
+
+2017-01-29 14:24:21,966 - [INFO] - from play in play-internal-execution-context-174 
+Application started (Dev)
+
+2017-01-29 14:24:28,198 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 14:24:38,628 - [ERROR] - from application in play-internal-execution-context-182 
+invokeError
+
+2017-01-29 14:24:55,337 - [ERROR] - from application in play-internal-execution-context-182 
+invokeError
+
+2017-01-29 14:25:04,823 - [ERROR] - from application in play-internal-execution-context-182 
+invokeError
+
+2017-01-29 14:25:36,490 - [ERROR] - from application in play-internal-execution-context-182 
+invokeError
+
+2017-01-29 14:26:03,351 - [ERROR] - from application in play-internal-execution-context-184 
+invokeError
+
+2017-01-29 14:26:35,630 - [ERROR] - from application in play-internal-execution-context-185 
+invokeError
+
+2017-01-29 14:26:44,426 - [ERROR] - from application in play-internal-execution-context-185 
+invokeError
+
+2017-01-29 14:36:53,498 - [INFO] - from play in play-internal-execution-context-189 
+Shutdown application default Akka system.
+
+2017-01-29 14:36:53,516 - [INFO] - from play in play-internal-execution-context-189 
+Application started (Dev)
+
+2017-01-29 14:36:57,623 - [INFO] - from play in New I/O worker #16 
+Starting application default Akka system.
+
+2017-01-29 14:37:00,562 - [ERROR] - from application in play-internal-execution-context-189 
+invokeError
+
+2017-01-29 14:37:02,073 - [ERROR] - from application in play-internal-execution-context-189 
+invokeError
+
+2017-01-29 14:37:03,555 - [ERROR] - from application in play-internal-execution-context-189 
+invokeError
+
+2017-01-29 14:37:14,498 - [ERROR] - from application in play-internal-execution-context-189 
+invokeError
+
+2017-01-29 14:37:36,656 - [ERROR] - from application in play-internal-execution-context-186 
+invokeError
+
+2017-01-29 14:37:37,601 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:37:38,378 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:37:39,888 - [ERROR] - from application in play-internal-execution-context-186 
+invokeError
+
+2017-01-29 14:37:40,416 - [ERROR] - from application in play-internal-execution-context-186 
+invokeError
+
+2017-01-29 14:37:40,880 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:37:41,281 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:37:41,682 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:37:42,107 - [ERROR] - from application in play-internal-execution-context-188 
+invokeError
+
+2017-01-29 14:39:49,530 - [INFO] - from play in play-internal-execution-context-187 
+Shutdown application default Akka system.
+
+2017-01-29 14:39:49,545 - [INFO] - from play in play-internal-execution-context-187 
+Application started (Dev)
+
+2017-01-29 14:39:54,033 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 14:40:20,020 - [ERROR] - from application in play-internal-execution-context-192 
+invokeError
+
+2017-01-29 14:40:25,251 - [ERROR] - from application in play-internal-execution-context-193 
+invokeError
+
+2017-01-29 14:40:26,525 - [ERROR] - from application in play-internal-execution-context-192 
+invokeError
+
+2017-01-29 14:40:30,627 - [ERROR] - from application in play-internal-execution-context-193 
+invokeError
+
+2017-01-29 14:45:17,268 - [INFO] - from play in play-internal-execution-context-195 
+Shutdown application default Akka system.
+
+2017-01-29 14:45:17,278 - [INFO] - from play in play-internal-execution-context-195 
+Application started (Dev)
+
+2017-01-29 14:45:20,009 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 14:45:30,135 - [ERROR] - from application in play-internal-execution-context-196 
+invokeError
+
+2017-01-29 14:45:42,086 - [ERROR] - from application in play-internal-execution-context-196 
+invokeError
+
+2017-01-29 14:46:21,892 - [INFO] - from play in play-internal-execution-context-200 
+Shutdown application default Akka system.
+
+2017-01-29 14:46:21,905 - [INFO] - from play in play-internal-execution-context-200 
+Application started (Dev)
+
+2017-01-29 14:46:24,086 - [INFO] - from play in New I/O worker #8 
+Starting application default Akka system.
+
+2017-01-29 14:46:39,867 - [ERROR] - from application in play-internal-execution-context-200 
+invokeError
+
+2017-01-29 14:46:46,738 - [ERROR] - from application in play-internal-execution-context-200 
+invokeError
+
+2017-01-29 14:50:24,110 - [INFO] - from play in play-internal-execution-context-197 
+Shutdown application default Akka system.
+
+2017-01-29 14:50:24,140 - [INFO] - from play in play-internal-execution-context-197 
+Application started (Dev)
+
+2017-01-29 14:50:27,376 - [INFO] - from play in New I/O worker #14 
+Starting application default Akka system.
+
+2017-01-29 14:50:38,370 - [ERROR] - from application in play-internal-execution-context-197 
+invokeError
+
+2017-01-29 14:50:53,391 - [ERROR] - from application in play-internal-execution-context-202 
+invokeError
+
+2017-01-29 14:52:10,630 - [INFO] - from play in play-internal-execution-context-207 
+Shutdown application default Akka system.
+
+2017-01-29 14:52:10,645 - [INFO] - from play in play-internal-execution-context-207 
+Application started (Dev)
+
+2017-01-29 14:52:14,771 - [INFO] - from play in New I/O worker #3 
+Starting application default Akka system.
+
+2017-01-29 14:52:24,435 - [ERROR] - from application in play-internal-execution-context-207 
+invokeError
+
+2017-01-29 14:52:35,763 - [ERROR] - from application in play-internal-execution-context-208 
+invokeError
+
+2017-01-29 14:53:07,508 - [INFO] - from play in play-internal-execution-context-205 
+Shutdown application default Akka system.
+
+2017-01-29 14:53:07,528 - [INFO] - from play in play-internal-execution-context-205 
+Application started (Dev)
+
+2017-01-29 14:53:10,904 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 14:53:21,683 - [ERROR] - from application in play-internal-execution-context-205 
+invokeError
+
+2017-01-29 14:53:26,875 - [ERROR] - from application in play-internal-execution-context-205 
+invokeError
+
+2017-01-29 16:01:05,657 - [INFO] - from play in play-internal-execution-context-203 
+Shutdown application default Akka system.
+
+2017-01-29 16:01:05,672 - [INFO] - from play in play-internal-execution-context-203 
+Application started (Dev)
+
+2017-01-29 16:01:10,478 - [INFO] - from play in New I/O worker #2 
+Starting application default Akka system.
+
+2017-01-29 16:16:08,031 - [INFO] - from play in play-internal-execution-context-215 
+Shutdown application default Akka system.
+
+2017-01-29 16:16:08,045 - [INFO] - from play in play-internal-execution-context-215 
+Application started (Dev)
+
+2017-01-29 16:16:10,959 - [INFO] - from play in New I/O worker #9 
+Starting application default Akka system.
+
+2017-01-29 16:16:19,158 - [ERROR] - from application in play-internal-execution-context-217 
+invokeError
+
+2017-01-29 16:16:33,420 - [ERROR] - from application in play-internal-execution-context-215 
+invokeError
+
