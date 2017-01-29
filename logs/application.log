@@ -1,3 +1,9 @@
 2017-01-29 20:43:11,775 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
+2017-01-29 21:10:58,400 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2017-01-29 21:11:06,014 - [INFO] - from play in New I/O worker #7 
+Starting application default Akka system.
+

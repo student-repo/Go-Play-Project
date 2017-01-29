@@ -49,22 +49,14 @@ Seq[Any](format.raw/*1.20*/("""
      		<div id="messages"></div>
    		</div>        
     </div>
-
-    <div>
-        <form action=""""),_display_(Seq[Any](/*26.24*/routes/*26.30*/.Application.chatRoom())),format.raw/*26.53*/("""" class="pull-right">
-            <input id="username" name="username" class="input-small" type="text" placeholder="Opponent Name">
-            <button class="btn" type="submit">Challenge</button>
-        </form>
-    </div>
+    <script type="text/javascript" charset="utf-8" src=""""),_display_(Seq[Any](/*24.58*/routes/*24.64*/.Application.chatRoomJs(username))),format.raw/*24.97*/(""""></script>
     
-    <script type="text/javascript" charset="utf-8" src=""""),_display_(Seq[Any](/*32.58*/routes/*32.64*/.Application.chatRoomJs(username))),format.raw/*32.97*/(""""></script>
-    
-""")))})),format.raw/*34.2*/("""
+""")))})),format.raw/*26.2*/("""
 
-"""),format.raw/*36.10*/("""
-    """),format.raw/*37.56*/("""
-    """),format.raw/*38.91*/("""
-"""),format.raw/*39.11*/("""
+"""),format.raw/*28.10*/("""
+    """),format.raw/*29.56*/("""
+    """),format.raw/*30.91*/("""
+"""),format.raw/*31.11*/("""
 """))}
     }
     
@@ -77,11 +69,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Jan 29 13:48:01 CET 2017
+                    DATE: Sun Jan 29 21:10:55 CET 2017
                     SOURCE: /home/ubuntu-master/Downloads/playWebsocket/app/views/chatRoom.scala.html
-                    HASH: 73774fe5afb096106d8c04ffc9ddd5eadd1d36d5
-                    MATRIX: 777->1|889->19|926->22|948->36|987->38|1548->563|1563->569|1608->592|1930->878|1945->884|2000->917|2049->935|2079->946|2112->1002|2145->1093|2174->1104
-                    LINES: 26->1|29->1|31->3|31->3|31->3|54->26|54->26|54->26|60->32|60->32|60->32|62->34|64->36|65->37|66->38|67->39
+                    HASH: 041be651267d693f1ed3ba6d6f72d39ed1d737e0
+                    MATRIX: 777->1|889->19|926->22|948->36|987->38|1571->586|1586->592|1641->625|1690->643|1720->654|1753->710|1786->801|1815->812
+                    LINES: 26->1|29->1|31->3|31->3|31->3|52->24|52->24|52->24|54->26|56->28|57->29|58->30|59->31
                     -- GENERATED --
                 */
             
