@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+<head>
+<style>
+
+#gameBoard {
+  width: 760px;
+  height: 760px;
+  border: 1px solid black;
+}
+
+div {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+</style>
+</head>
+<body>
+<div id="gameBoard">
+</div>
+
+<script type="text/javascript">
+    var empty = "url(emptyField.png)";
+
+    for (var i = 0; i < 361; i++) {
+  document.getElementById("gameBoard").appendChild(document.createElement("div")).style.backgroundImage = "@routes.Assets.at("images/emptyField.png")";
+}
+
+</script>
+
+</body>
+</html>
